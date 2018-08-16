@@ -1,0 +1,22 @@
+﻿<Page x:Class="testapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+      Background="White">
+    <Grid x:Name="menu">
+        <TextBox HorizontalAlignment="Center" Height="71" TextWrapping="Wrap" Text="Quizinator" FontSize="34" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="create" Content="Create Quiz" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="114" 
+                Height="48" Margin="343,101,338.2,0" Click="create_Click"/>
+        <Button x:Name="load" Content="Load Quiz" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="114" 
+                Height="48" Margin="343,248,338.2,0" Click="load_Click"/>
+        <Button x:Name="play" Content="Play Quiz" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="114" 
+                Height="48" Margin="343,172,338.2,0" Click="play_Click"/>
+        <Label x:Name="filefound" HorizontalAlignment="Left" Height="33" Margin="343,325,0,0"
+                  VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.474,-0.058" HorizontalContentAlignment="Center"/>
+        <Frame x:Name="main" Height="450" Width="800"/>
+    </Grid>
+</Page>
